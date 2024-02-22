@@ -1,10 +1,10 @@
-all:Strlist
+all:StrList
 
-Strlist: Strlist.o main.o
-	gcc -Wall -g -o Strlist Strlist.o main.o -lm
+StrList: Strlist.o main.o
+	gcc -Wall -g -o StrList Strlist.o main.o -lm
 
-Strlist.o:Strlist.h
+StrList.o:Strlist.h
 main.o:Strlist.h
 
 clean:
-	rm -f *.a *.o Strlist 
+	rm -f *.a *.o StrList 
